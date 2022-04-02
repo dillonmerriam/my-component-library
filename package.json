@@ -19,6 +19,9 @@
     "styled-components-modifiers": "^1.2.5",
     "web-vitals": "^2.1.4"
   },
+  "resolutions": {
+    "@storybook/{app}/webpack": "^5"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
