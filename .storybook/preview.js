@@ -1,9 +1,12 @@
-export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
-    },
-  },
-}
+import { addParameters, addDecorator } from "@storybook/react";
+import { withContexts } from "@storybook/addon-contexts/react";
+import { contexts } from "./contexts";
+
+addParameters({
+  backgrounds: [
+    { name: "Default theme", value: "#ffffff", default: true },
+    { name: "Dark theme", value: "#233e31" }
+  ]
+});
+
+addDecorator(withContexts(contexts));
