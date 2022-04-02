@@ -7,8 +7,8 @@ module.exports = {
     "@storybook/addon-actions",
     "@storybook/addon-links",
     "@storybook/addon-knobs",
-    "@storybook/addon-backgrounds/register",
-    "@storybook/addon-contexts/register"
+    "@storybook/addon-backgrounds",
+    "@storybook/addon-contexts"
 
 
   ]

@@ -1,6 +1,8 @@
 import { Meta, Story, Preview } from '@storybook/addon-docs';
 import { action } from "@storybook/addon-actions";
+import { withKnobs, boolean } from "@storybook/addon-knobs";
 import { PrimaryButton, SecondaryButton, TertiaryButton } from "./Buttons";
+import { SignUpModal } from "./Modals";
 
 <Meta title="Design System|Buttons" component={PrimaryButton} />
 
@@ -18,7 +20,7 @@ Primary buttons are used as a call to action and indicate the most important act
 
 <Preview withToolbar>
   <Story name="primary">
-    <PrimaryButton onClick = {action('button-click')}>Hello world</PrimaryButton>
+    <PrimaryButton disabled={boolean("Disabled", false)} onClick = {action('button-click')}>Hello world</PrimaryButton>
   </Story>
 </Preview>
 
@@ -36,4 +38,12 @@ Primary buttons are used as a call to action and indicate the most important act
 
 <Story name="tertiary">
   <TertiaryButton>Hello world</TertiaryButton>
+</Story>
+
+# Modals
+
+Modals in-app pop-ups used to call special attentition to the user upon specified actions
+
+<Story name="modal">
+  <SignUpModal />
 </Story>
