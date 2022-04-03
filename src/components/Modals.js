@@ -83,7 +83,7 @@ export const SignInModal = ({ showModal, setShowModal }) => (
     <ColumnModalWrapper>
       <div>
         <ModalHeader>Sign In</ModalHeader>
-        <EmailInput label="Email" placeholder="emmabostian@gmail.com" />
+        <EmailInput label="Email" placeholder="dillonwmerriam@gmail.com" />
         <PasswordInput label="Password" />
         <SecondaryButton style={{ margin: "16px 16px 0 0" }}>
           Sign Up

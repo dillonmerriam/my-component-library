@@ -1,0 +1,16 @@
+import { Meta, Story, Preview } from '@storybook/addon-docs';
+import { action } from "@storybook/addon-actions";
+import { withKnobs, boolean } from "@storybook/addon-knobs";
+import { SignInModal } from "./Modals";
+
+<Meta title="Design System|Modals" component={SignInModal} />
+
+# Modals
+
+Modals in-app pop-ups used to call special attentition to the user upon specified actions
+
+<Preview withToolbar>
+  <Story name="modal">
+    <SignInModal showModal={boolean("Show Modal", true)}/>
+  </Story>
+</Preview>

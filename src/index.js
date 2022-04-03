@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle, defaultTheme, darkTheme } from "./utils";
-import { SignUpModal, PrimaryButton } from "./components";
+import { SignInModal, PrimaryButton } from "./components";
 
 const App = () => {
   const [useDarkTheme, setUseDarkTheme] = useState(false);
@@ -39,7 +39,7 @@ const App = () => {
           justifyContent: "space-around"
         }}
       >
-        <SignUpModal showModal={showModal} setShowModal={setShowModal} />
+        <SignInModal showModal={showModal} setShowModal={setShowModal} />
 
         <GlobalStyle />
       </div>
